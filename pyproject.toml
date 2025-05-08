@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="tzuki-ml-project"
+authors = [
+    {name = "Thomaz Suzuki"}
+]
+description = "Project 5"
+requires-python = ">=3.11"
+dynamic = ["dependencies", "version"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools_scm]
+version_scheme = "no-guess-dev"
+local_scheme = "no-local-version"

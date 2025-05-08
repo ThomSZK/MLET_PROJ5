@@ -1,0 +1,2 @@
+class foo:
+    print("test")
